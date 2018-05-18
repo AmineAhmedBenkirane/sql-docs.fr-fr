@@ -56,10 +56,12 @@ Pour améliorer l'utilité de la sortie d'erreur, vous allez utiliser un composa
 8.  Dans la page **Entrées et sorties** , développez **Sortie 0**, cliquez sur **Colonnes de sortie**, puis sur **Ajouter une colonne**.  
   
 9. Dans la propriété **Name** , tapez **ErrorDescription** et attribuez à la propriété **DataType** la valeur **Unicode string [DT_WSTR]**.  
+
+10. Dans la propriété **Length**, modifier la valeur 50 et la passer à 200.
   
-10. Dans la page **Script** , vérifiez que la propriété **LocaleID** a la valeur **Anglais (États-Unis)**.  
+11. Dans la page **Script** , vérifiez que la propriété **LocaleID** a la valeur **Anglais (États-Unis)**.  
   
-11. Cliquez sur **Modifier le script** pour ouvrir [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tools for Applications (VSTA). Dans la méthode **Input0_ProcessInputRow** , tapez ou collez le code suivant.  
+12. Cliquez sur **Modifier le script** pour ouvrir [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tools for Applications (VSTA). Dans la méthode **Input0_ProcessInputRow** , tapez ou collez le code suivant.  
   
     [Visual Basic]  
   
@@ -98,9 +100,9 @@ Pour améliorer l'utilité de la sortie d'erreur, vous allez utiliser un composa
         }  
     ```  
   
-12. Dans le menu **Générer** , cliquez sur **Générer la solution** pour créer le script et enregistrer vos modifications, puis fermez VSTA.  
+13. Dans le menu **Générer** , cliquez sur **Générer la solution** pour créer le script et enregistrer vos modifications, puis fermez VSTA.  
   
-13. Cliquez sur **OK** pour fermer la boîte de dialogue **Éditeur de transformation de script** .  
+14. Cliquez sur **OK** pour fermer la boîte de dialogue **Éditeur de transformation de script** .  
   
 ## <a name="next-steps"></a>Next Steps  
 [Étape 4 : Ajout d'une destination de fichier plat](../integration-services/lesson-4-4-adding-a-flat-file-destination.md)  
